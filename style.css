@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root,
 html,
 body{
@@ -5,13 +7,13 @@ body{
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: lightslategrey;
+  background-color: #88807e;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   display: grid;
   grid-template-columns: 250px 3fr 1fr;
-  grid-template-rows: 150px 1fr;
-  border: 1px solid red;
+  grid-template-rows: 100px 1fr;
 }
 a {
   text-decoration: none;
@@ -20,14 +22,15 @@ a {
 
 
 .header {
-  background-color: rgb(225,225,225);
+  background-color: #323c24;
   grid-column: 2 / 4;
   grid-row: 1 / 2;
+  box-shadow: 1px 0px 5px black;
 }
 
 
 .sidebar {
-  background-color: rgb(10,88,189);
+  background-color: #303c4e;
   color: white;
   padding: 10px;
   padding-left: 20px;
@@ -66,25 +69,36 @@ a {
 
 
 .project-container {
-  border: 3px solid black;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
   padding-inline: 15px;
   padding-top: 10px;
   padding-bottom: 30px;
 }
 .cards-container {
   display: grid;
+  height: 100%;
+  width: 100%;
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 12px;
 }
 .project-card {
-  height: 100%;
-  width: 100%;
-  border: 2px solid red;
+  background-color: #dedddb;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+.project-card::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: 7px;
+  background-color: #323c24;
+}
 
 .right-bar {
   border: 3px solid black;
