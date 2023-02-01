@@ -13,7 +13,7 @@ body{
 body {
   display: grid;
   grid-template-columns: 250px 3fr 1fr;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 150px 1fr;
 }
 a {
   text-decoration: none;
@@ -25,7 +25,94 @@ a {
   background-color: #323c24;
   grid-column: 2 / 4;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   box-shadow: 1px 0px 5px black;
+}
+.header-toprow,
+.header-bottomrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10px;
+  flex-grow: 0;
+}
+.header-toprow>div>svg {
+  height: 30px;
+  width: auto;
+}
+.search-container,
+.account-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  min-width: clamp(200px, 500px, 500px);
+  margin-inline: 10px;
+  border-radius: 10px;
+  align-items: left;
+}
+.notification {
+  padding-left: 50px;
+  flex: 0;
+}
+.small-usericon {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin-left: 20px;
+  overflow: none;
+}
+.username {
+  padding-left: 10px;
+}
+.welcome-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 100px;
+}
+.large-usericon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  overflow: none;
+  justify-content: center;
+  margin-right: 10px;
+}
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  height: 100%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.welcome-text>h3 {
+  margin-top: 0;
+}
+.welcome-text>h5 {
+  margin-bottom: 0;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  height: 100%;
+  align-items: flex-end;
+  padding-bottom: 16px;
+}
+.button-container>button {
+  height: 30px;
+  width: 80px;
+  border-radius: 15px;
 }
 
 
