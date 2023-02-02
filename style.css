@@ -153,16 +153,20 @@ a {
   grid-gap: 8px;
   align-items: center;
 }
+.sidebar-block>svg:hover,
+.sidebar-block>a:hover {
+  cursor: grab;
+  transform:translateX(10px);
+  transition: 0.3s ease;
+}
 .sidebar-block>svg {
   fill: white;
   width: auto;
   height: 20px;
+  grid-column: 1 / 2;
 }
 .sidebar-block>a {
   grid-column: 2 / 3;
-}
-.sidebar-block>svg {
-  grid-column: 1 / 2;
 }
 
 
@@ -223,6 +227,12 @@ a {
   height: var(--svg-height);
   width: auto;
   padding-right: 30px;
+}
+.project-icons>svg:hover {
+  cursor: grab;
+  scale: 1.1;
+  transition: 0.3s ease;
+  transform: rotateZ(2deg);
 }
 
 
