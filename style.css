@@ -191,7 +191,7 @@ a {
   display: grid;
   --svg-height: 30px;
   grid-template-columns: 7px 1fr;
-  grid-template-rows: 1fr calc(var(--svg-height)+15px);
+  grid-template-rows: 1fr 60px;
 }
 .project-card::before {
   content: '';
